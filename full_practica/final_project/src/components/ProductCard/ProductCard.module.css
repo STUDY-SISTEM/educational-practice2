@@ -1,0 +1,103 @@
+.card {
+  display: block;
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow var(--transition), transform var(--transition);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* maintain aspect ratio */
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #fafafa;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.addButton {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition), background-color var(--transition);
+}
+
+.card:hover .addButton {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.addButton:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.added {
+  background-color: #e0e0e0;
+  color: var(--color-primary);
+}
+
+.cardBody {
+  padding: 0.75rem;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.newPrice {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212121;
+}
+
+.oldPrice {
+  font-size: 0.8rem;
+  color: #888;
+  text-decoration: line-through;
+}

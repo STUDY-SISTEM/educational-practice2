@@ -1,0 +1,51 @@
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.notFound {
+  text-align: center;
+  padding: 2rem;
+}
+
+.code {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cactus {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.homeBtn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color var(--transition);
+}
+
+.homeBtn:hover {
+  background-color: var(--color-primary-dark);
+}

@@ -1,0 +1,69 @@
+.contactSection {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--color-light-gray);
+  border-top: 1px solid var(--color-border);
+  margin-top: 4rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #212121;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.infoBox {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.infoBox h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.socials {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+  transition: background-color var(--transition);
+}
+
+.socials a:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.mapWrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

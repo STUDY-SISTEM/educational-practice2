@@ -1,0 +1,105 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-border);
+  z-index: 100;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Create a simple leaf shape for the logo */
+.logoImg {
+  height: 42px;   /* можешь изменить под свой логотип */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.logoIcon::before,
+.logoIcon::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 14px;
+  border-radius: 8px 8px 0 8px;
+  background-color: #fff;
+  transform: rotate(-25deg);
+}
+
+.logoIcon::after {
+  left: 16px;
+  transform: rotate(25deg);
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  color: #555;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.link:hover {
+  color: var(--color-primary-dark);
+}
+
+.activeLink {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.cart {
+  position: relative;
+}
+
+.cartLink {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #333;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 0.7rem;
+  line-height: 1;
+  min-width: 16px;
+  text-align: center;
+}
